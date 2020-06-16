@@ -9,119 +9,143 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <title>My first 5 weeks at CodeFactory</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <title>TRAVEL EVEREST</title>
   <style>
-    .bg-light {
-      background-color: lightgrey!important;
+    * {
+      font-family: 'Lato', sans-serif;
     }
 
-    .nav-link.active {
-      background-color: darkgrey!important;
+    .jumbotron {
+      height: 100vh;
+      background-image: url(https://images.unsplash.com/photo-1522328130867-8df79ee56d04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
     }
 
-    a {
+    .jumbotron h1 {
+      padding: 50px;
+      background-color: white;
+      font-size: 3em;
+      letter-spacing: 0.3em;
+      text-align: center;
       color: black;
     }
 
-    a:hover {
-      color: white!important;
-      background-color: black!important;
+    .innderdiv {
+      margin: 1px;
+      height: 250px;
     }
 
+    h3 {
+      margin: 3vh 0 1vh 0;
+    }
 
+    footer {
+      margin-top: 5vh;
+      background-color: lightgrey;
+    }
 
+    img.location {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .container {
+      z-index: 2;
+    }
   </style>
 </head>
 
 <body>
 
 
-  <nav class="navbar navbar-expand-lg navbar-light flex-grow-1 bg-light">
-    <div class="collapse navbar-collapse text-right">
-      <ul class="navbar-nav ml-auto flex-nowrap">
-        <li class="nav-item"><a class="nav-link" href="">Plot</a></li>
-        <li class="nav-item"><a class="nav-link" href="">Actors</a></li>
-        <li class="nav-item"><a class="nav-link" href="">Reviews</a></li>
-
+  <nav class="fixed-top navbar navbar-expand-lg navbar-light flex-grow-1 bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-left"  id="navbarTogglerDemo02">
+      <ul class="navbar-nav m-auto flex-nowrap">
+        <li class="nav-item"><a class="nav-link" href="">LOCATIONS</a></li>
+        <li class="nav-item"><a class="nav-link" href="">ABOUT TRAVEL EVEREST</a></li>
+        <li class="nav-item"><a class="nav-link" href="">REVIEWS</a></li>
       </ul>
     </div>
   </nav>
 
 
 
+  <div class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center">
+      <h1>TRAVEL – MOUNT EVEREST</h1>
+  </div>
 
-  <div class="mt-5 container">
+  <div class="container">
+    <h3>LOCATIONS – EUROPE</h3>
     <div class="row">
-      <div class="pr-0 bg-light col-xl-3 nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-        <a class="nav-link active" id="actor1-tab" data-toggle="pill" href="#actor1" role="tab"
-          aria-controls="actor1" aria-selected="true">Actor 1</a>
-
-        <a class="nav-link" id="actor2-tab" data-toggle="pill" href="#actor2" role="tab"
-          aria-controls="actor2" aria-selected="false">Actor 2</a>
-
-        <a class="nav-link" id="actor3-tab" data-toggle="pill" href="#actor3" role="tab"
-          aria-controls="actor3" aria-selected="false">Actor 3</a>
-        
-        <a class="nav-link" id="actor4-tab" data-toggle="pill" href="#actor4" role="tab"
-          aria-controls="actor4" aria-selected="false">Actor 4</a>
-      
-        <a class="nav-link" id="actor5-tab" data-toggle="pill" href="#actor5" role="tab"
-          aria-controls="actor15" aria-selected="false">Actor 5</a>
-        
-        <a class="nav-link" id="actor6-tab" data-toggle="pill" href="#actor6" role="tab"
-          aria-controls="actor6" aria-selected="false">Actor 6</a>
-
-        <a class="nav-link" id="actor7-tab" data-toggle="pill" href="#actor7" role="tab"
-          aria-controls="actor7" aria-selected="false">Actor 7</a>
+      <div class="col-xl-3 p-0 col-md-4 col-sm-12">
+        <div class="innderdiv"><img class="location" src="https://assets.kpmg/content/dam/kpmg/xx/images/2019/12/france-country-image-tbb.jpg/jcr:content/renditions/cq5dam.web.512.341.jpg">PARIS – FRANCE</div>
       </div>
-
-      <div class="ml-5 bg-light col-xl-8 tab-content" id="v-pills-tabContent">
-
-        <div class="tab-pane fade show active" id="actor1" role="tabpanel" aria-labelledby="actor1-tab">
-          <h1>Actor 1</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-
-        <div class="tab-pane fade" id="actor2" role="tabpanel" aria-labelledby="actor2-tab">
-          <h1>Actor 2</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-
-        <div class="tab-pane fade" id="actor3" role="tabpanel" aria-labelledby="actor3-tab">
-          <h1>Actor 3</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-
-        <div class="tab-pane fade" id="actor4" role="tabpanel" aria-labelledby="actor4-tab">
-          <h1>Actor 4</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      
-        <div class="tab-pane fade" id="actor5" role="tabpanel" aria-labelledby="actor5-tab">
-          <h1>Actor 5</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-
-        <div class="tab-pane fade" id="actor6" role="tabpanel" aria-labelledby="actor6-tab">
-          <h1>Actor 6</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-
-        <div class="tab-pane fade" id="actor7" role="tabpanel" aria-labelledby="actor7-tab">
-          <h1>Actor 7</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-
+      <div class="col-xl-3 p-0 col-md-4 col-sm-12">
+        <div class="innderdiv"><img class="location" src="https://www.idealtours.at/var/ezwebin_site/storage/images/8/7/5/0/10578-156-ger-DE/Idealtours_Rom_Colosseum_shutterstock_433413835-web.jpg">ROME – ITALY</div>
+      </div>
+      <div class="col-xl-3 p-0 col-md-4 col-sm-12">
+        <div class="innderdiv"><img class="location" src="https://cdn.theculturetrip.com/wp-content/uploads/2018/01/shutterstock_545763607.jpg">VIENNA – AUSTRIA</div>
+      </div>
+      <div class="col-xl-3 p-0 col-md-4 col-sm-12">
+        <div class="innderdiv"><img class="location" src="https://www.bollore-logistics.com/PublishingImages/FOCUS/Market%20Focus%20SPAIN%20Cover.jpg">MADRID – SPAIN</div>
       </div>
     </div>
+
+    <h3>LOCATIONS – AMERICA</h3>
+    <div class="row">
+      <div class="col-xl-3 p-0 col-md-4 col-sm-12">
+        <div class="innderdiv"><img class="location" src="https://www1.wdr.de/radio/1live/events/star-tours/star-tours-los-angeles-102~_v-gseagaleriexl.jpg">LOS ANGELES – USA</div>
+      </div>
+      <div class="col-xl-3 p-0 col-md-4 col-sm-12">
+        <div class="innderdiv"><img class="location" src="https://cdn.pixabay.com/photo/2019/07/21/07/12/new-york-4352072_960_720.jpg">NEW YORK – USA</div>
+      </div>
+      <div class="col-xl-3 p-0 col-md-4 col-sm-12">
+        <div class="innderdiv"><img class="location" src="https://ichreise.at/wp-content/uploads/2018/11/shutterstock_1005708952.jpg">MEXICO CITY – MEXICO</div>
+      </div>
+      <div class="col-xl-3 p-0 col-md-4 col-sm-12">
+        <div class="innderdiv"><img class="location" src="https://www.cu-camper.com/de/magazin/wp-content/uploads/2018/11/toronto-skyline-vom-wasser.jpg">TORONTO – CANADA</div>
+      </div>
+    </div>
+
+    <h3>LOCATIONS – ASIA</h3>
+    <div class="row">
+      <div class="col-xl-3 p-0 col-md-4 col-sm-12">
+        <div class="innderdiv"><img class="location" src="https://cdn.urlaubsguru.at/wp-content/uploads/2017/02/grand-palace-and-wat-phra-keaw-at-sunset-bangkok-thailand-shutterstock_299388287-2.jpg">BANGKOK – THAILAND</div>
+      </div>
+      <div class="col-xl-3 p-0 col-md-4 col-sm-12">
+        <div class="innderdiv"><img class="location" src="https://d13jio720g7qcs.cloudfront.net/images/guides/origin/5d3ea278c24e4.jpg">HANOI – VIETNAM</div>
+      </div>
+      <div class="col-xl-3 p-0 col-md-4 col-sm-12">
+        <div class="innderdiv"><img class="location" src="https://cdn.prod.www.spiegel.de/images/fc440691-44b3-4824-ba1e-23475fd2aa8d_w948_r1.77_fpx51.73_fpy54.99.jpg">HONGKONG – CHINA</div>
+      </div>
+      <div class="col-xl-3 p-0 col-md-4 col-sm-12">
+        <div class="innderdiv"><img class="location" src="https://media.gettyimages.com/photos/mt-fuji-and-tokyo-skyline-picture-id904453184?s=612x612">TOKYO – JAPAN</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container">
+    
   </div>
 
 
+  <footer class="page-footer font-small blue">
 
-
-
-
-
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://TRAVELEVEREST.com/"> TRAVEL EVEREST</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
 
 
   <!-- Optional JavaScript -->
